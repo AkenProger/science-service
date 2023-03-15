@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, h2 , h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #444490;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: white;
+    padding: 10px 25px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.add_btn {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    background: #444490;
+    border-radius: 15px;
+    float: left;
+    color: white;
+}
+
+.res_card {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 15px;
+}
+
+.card {
+    width: 47%;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 15px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0px;
+}
+
+.filter select {
+    font-size: 25px;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Science</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+
+</head>
+<body>
+<div class="navbar">
+    <h2 style="padding: 10px">
+        <a href="/" style="color: white; text-decoration: none;">SCIENCE</a>
+    </h2>
+    <h2 style="padding: 10px">AUTH AND REGISTRATION SECTOR</h2>
+</div>
+
+<div class="container">
+    <hr>
+    <form action="/searchName/" method="get">
+        <input type="text" name="name" id="" style="width: 60%; font-size: 25px" placeholder="ПОИСК В GOOGLE ACADEMY">
+        <input type="submit" value="Search" style="font-size: 25px">
+    </form>
+    <hr>
+
+    {% block content %}
+    {% endblock %}
+
+</div>
+</body>
+</html>

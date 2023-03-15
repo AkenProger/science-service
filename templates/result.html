@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Результат: Новый результат сразу записан</h1>
+<h2>{{h2}}</h2>
+<hr>
+<div style="res_card">
+    <img src="{{data.imgUrl}}" alt="" width="180px" style="border-radius: 15px;">
+    <div>
+        <h2>Имя: {{data.name}}</h2>
+        <h3>hIndex: {{data.hindex}}</h3>
+        <h3>i10index: {{data.i10index}}</h3>
+        <h6>Источник: {{data.resource}}</h6>
+        <a href="/" class="add_btn">Добавить</a>
+    </div>
+</div>
+{% endblock %}
