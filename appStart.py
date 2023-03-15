@@ -39,7 +39,6 @@ def filterAuthors():
     match filterKey:
         case "hindex":
             dataH = DBHelper.filterAuthors(filterKey)
-            print(dataH)
             return render_template("index.html", datas=dataH, sess1="selected")
         case "i10index":
             dataI = DBHelper.filterAuthors(filterKey)

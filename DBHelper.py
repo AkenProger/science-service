@@ -51,7 +51,6 @@ def updateAuthor(data):
 def filterAuthors(filterKey):
     conn = create_connection(database)
     cur = conn.cursor()
-    print("INDATA ", filterKey)
     if filterKey == "i10index":
         cur.execute("select * from authors ORDER by i10index DESC")
         return cur.fetchall()
